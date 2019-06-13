@@ -1,0 +1,32 @@
+@import 'util/fabric/ui/themes/dark/dark.variables.scss';
+
+#{$dark-selector} {
+
+	.gui-card {
+		.gui-card-body {
+			background: $background-dark;
+			color: $basic-text;
+			border-color: $border-color;
+
+			.gui-card-content-block {
+
+
+				.gui-card-content-block-item {
+					border-top-color: $border-color;
+				}
+
+				.gui-card-content-block-item:last-child {
+					border-bottom-color: $border-color;
+
+				}
+			}
+		}
+	}
+
+	.gui-content-block {
+
+		.gui-card-content-block {
+			border-color: $border-color;
+		}
+	}
+}

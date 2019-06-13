@@ -1,0 +1,10 @@
+@import 'util/fabric/ui/themes/material/material.variables.scss';
+
+#{$material-selector} {
+
+	.gui-dropdown {
+		.gui-dropdown-container {
+			font-family: $font-family;
+		}
+	}
+}

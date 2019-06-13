@@ -1,0 +1,17 @@
+@import 'util/fabric/ui/themes/dark/dark.variables.scss';
+@import 'util/fabric/ui/themes/dark/dark.mixins.scss';
+
+#{$dark-selector} {
+
+	.gui-chip {
+		background: $basic-background;
+		border: {
+			color: $border-color
+		}
+		color: $basic-text;
+
+		@include primary();
+		@include secondary();
+		@include outline();
+	}
+}

@@ -1,0 +1,10 @@
+@import 'util/fabric/ui/themes/material/material.variables.scss';
+
+.app-header {
+  padding: $grid/2;
+  text-align: center;
+  background: $secondary;
+  color: $white;
+  font-size: $grid*2;
+  font-family: $font-family;
+}

@@ -1,0 +1,9 @@
+<input gui-input
+       [(ngModel)]="todoText"
+       (keydown.enter)="sendTodoItem()"
+       [placeholder]="placeholder">
+<button gui-button
+        (click)="sendTodoItem()"
+        [secondary]="true">Add
+</button>
+<button gui-button (click)="clear()">clear</button>

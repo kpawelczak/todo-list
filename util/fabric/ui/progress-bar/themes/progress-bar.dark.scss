@@ -1,0 +1,41 @@
+@import 'util/fabric/ui/themes/dark/dark.variables.scss';
+
+#{$dark-selector} {
+
+	.gui-progress-bar {
+		border: {
+			color: $border-color;
+		}
+		color: $basic-text;
+	}
+
+	.gui-progress {
+		background: $basic-background;
+
+		&.gui-primary {
+			.gui-progress {
+				background: $primary;
+			}
+
+			.gui-progress-bar {
+				border: {
+					color: $primary;
+				}
+				color: $ps-text;
+			}
+		}
+
+		&.gui-secondary {
+			.gui-progress {
+				background: $secondary;
+			}
+
+			.gui-progress-bar {
+				border: {
+					color: $secondary;
+				}
+				color: $ps-text;
+			}
+		}
+	}
+}

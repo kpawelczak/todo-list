@@ -1,0 +1,22 @@
+@import 'util/fabric/ui/themes/dark/dark.variables.scss';
+
+#{$dark-selector} {
+
+	.gui-progress-spinner {
+		circle {
+			stroke: $basic;
+		}
+	}
+
+	.gui-primary .gui-progress-spinner {
+		circle {
+			stroke: $primary;
+		}
+	}
+
+	.gui-secondary .gui-progress-spinner {
+		circle {
+			stroke: $secondary;
+		}
+	}
+}

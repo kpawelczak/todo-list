@@ -1,0 +1,7 @@
+@import 'util/fabric/ui/themes/material/material.variables.scss';
+
+.todo-list-container {
+  position: relative;
+  padding: $grid;
+  left: 35%;
+}

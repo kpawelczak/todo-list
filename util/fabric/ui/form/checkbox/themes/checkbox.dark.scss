@@ -1,0 +1,29 @@
+@import 'util/fabric/ui/themes/dark/dark.variables.scss';
+@import 'util/fabric/ui/themes/dark/dark.mixins.scss';
+
+#{$dark-selector} {
+
+	.gui-checkbox {
+		color: $basic-text;
+
+		.gui-checkmark {
+			border-color: $border-color;
+		}
+
+		input:checked + .gui-checkmark {
+			border-color: $border-color;
+		}
+
+		input:focus + .gui-checkmark {
+			border-color: $focus;
+		}
+
+		.gui-checkmark:after {
+			border-color: $basic-light;
+		}
+
+		&.gui-disabled.gui-checkbox {
+			opacity: 0.36;
+		}
+	}
+}

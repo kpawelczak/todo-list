@@ -1,0 +1,102 @@
+@import 'util/fabric/ui/variables.scss';
+@import 'util/fabric/ui/mixins.scss';
+
+$arrow-color: $black-light;
+$border-width: 1px;
+$padding: $grid $grid*4 $grid $grid*1.5;
+
+
+.gui-dropdown {
+
+	.gui-dropdown-container {
+		background: $white;
+		border: {
+			color: $border-color;
+			style: solid;
+			width: $border-width;
+			radius: $border-radius;
+		}
+		cursor: pointer;
+		color: $black;
+		display: inline-block;
+		font: $font;
+		padding: $padding;
+		position: relative;
+		width: 70px;
+
+		&:hover {
+			border-color: $gray;
+		}
+
+		.gui-dropdown-arrow {
+			border: 4px solid transparent;
+			border-color: $arrow-color transparent transparent transparent;
+			position: absolute;
+			top: 5px;
+			right: 10px;
+			margin: 8px;
+			width: 0;
+			height: 0;
+		}
+
+		.gui-dropdown-right {
+			&.gui-dropdown-menu {
+				margin: 0;
+				top: 0;
+			}
+		}
+
+		.gui-dropdown-left {
+			&.gui-dropdown-menu {
+				margin: 0;
+				top: 0;
+			}
+		}
+
+		.gui-dropdown-menu {
+			background: inherit;
+			display: none;
+			left: -1px;
+			overflow: hidden;
+			position: absolute;
+			z-index: 2;
+
+			border: {
+				color: $border-color;
+				style: solid;
+				width: $border-width;
+				radius: $border-radius
+			}
+
+			.gui-item {
+				padding: $padding;
+				width: 70px;
+				list-style-type: none;
+
+				&:hover {
+					background: $gainsboro;
+				}
+			}
+		}
+
+		@include disableTextSelect();
+	}
+
+	&.gui-menu-opened {
+
+		.gui-dropdown-container {
+			border: {
+				color: $gray;
+			}
+		}
+
+		.gui-dropdown-menu {
+			display: block;
+		}
+	}
+
+	.gui-disabled {
+		color: $disabled;
+		pointer-events: none;
+	}
+}

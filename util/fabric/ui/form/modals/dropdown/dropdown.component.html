@@ -1,0 +1,12 @@
+<div #container
+	 (click)="tryToOpen($event)"
+	 (document:click)="clickOutside($event)"
+	 [ngClass]="{'gui-disabled': disabled}"
+	 class="gui-dropdown-container">
+	<div>{{dropdownText}}</div>
+	<span [ngClass]="{'gui-dropdown-arrow': isArrowEnabled}"></span>
+	<div #dropdownMenu
+		 class="gui-dropdown-menu">
+		<ng-content></ng-content>
+	</div>
+</div>

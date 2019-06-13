@@ -1,0 +1,29 @@
+@import 'util/fabric/ui/themes/dark/dark.variables.scss';
+@import 'util/fabric/ui/themes/dark/dark.mixins.scss';
+
+#{$dark-selector} {
+
+	.gui-radio-button {
+		color: $basic-text;
+
+		.gui-radio-checkmark {
+			border-color: $border-color;
+		}
+
+		input:checked + .gui-radio-checkmark {
+			border-color: $border-color;
+		}
+
+		input:focus + .gui-radio-checkmark {
+			border-color: $focus;
+		}
+
+		.gui-radio-checkmark:after {
+			background: $basic-light;
+		}
+
+		&.gui-disabled.gui-radio-button {
+			opacity: 0.36;
+		}
+	}
+}

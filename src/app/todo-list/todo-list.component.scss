@@ -1,0 +1,42 @@
+@import 'util/fabric/ui/themes/material/material.variables.scss';
+
+.todo-list {
+  margin-top: $grid;
+  padding: 0;
+}
+
+li {
+  position: relative;
+  width: 470px;
+  padding: 0;
+  list-style: none;
+}
+
+.todo-list-item {
+  margin-top: $grid/2;
+
+  &:hover {
+    color: $secondary-hover;
+  }
+}
+
+.checked {
+  color: $secondary;
+  text-decoration: line-through;
+}
+
+.delete {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  color: $primary;
+  cursor: pointer;
+  font-size: 21px;
+  right: 0;
+  top: 0;
+  padding: 4px 0;
+
+  &:hover {
+    color: $secondary-hover
+  }
+}

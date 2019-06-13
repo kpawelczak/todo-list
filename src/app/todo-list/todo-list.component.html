@@ -1,0 +1,14 @@
+<ul #todoContainer
+    class="todo-list">
+  <li *ngFor="let item of todoList">
+    <gui-checkbox
+      (changed)="check($event, item.id)"
+      [attr.item-id]="item.id"
+      class="todo-list-item">
+      {{item.text}}
+    </gui-checkbox>
+    <span class="delete" >
+      <i (click)="delete(item)" class="fa fa-trash"></i>
+    </span>
+  </li>
+</ul>

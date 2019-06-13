@@ -1,0 +1,14 @@
+@import 'util/fabric/ui/themes/dark/dark.variables.scss';
+@import 'util/fabric/ui/themes/dark/dark.mixins.scss';
+
+#{$dark-selector} {
+
+	.gui-badge {
+		background: $basic-background;
+		color: $basic-text;
+
+		@include primary();
+		@include secondary();
+		@include outline();
+	}
+}
