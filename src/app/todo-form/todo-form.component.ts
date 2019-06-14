@@ -10,15 +10,15 @@ import { TodoItem } from '../todo-list-service/todo-item';
 })
 export class TodoFormComponent {
 
-  private todoText: string = '';
-  private todoId: number;
-  private todoItem: TodoItem;
-  private placeholder: string = 'Title...';
+  todoText: string = '';
+  todoId: number;
+  todoItem: TodoItem;
+  placeholder: string = 'Title...';
 
   constructor(private todoService: TodoService) {
   }
 
-  private sendTodoItem(): void {
+  sendTodoItem(): void {
     if (this.todoText === '') {
       this.placeholder = 'You must type in something!';
       return;
@@ -37,7 +37,7 @@ export class TodoFormComponent {
     };
   }
 
-  private clear(): void {
+  clear(): void {
     this.todoService.clearTodoList();
   }
 
